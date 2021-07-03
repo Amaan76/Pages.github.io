@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.js"></script>
+<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Paper</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="firebase.js"></script>
+  </head>
+  <body style="font-family: 'Montserrat', sans-serif; background-color: #111827" class="bg-gray-800">
+    <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
+          <a href="index.html" class=" hover:bg-green-200 flex title-font font-medium items-center text-white mb-4 md:mb-0 bg-green-700 rounded-2xl px-1 py-1">
+           <img style="width: 50px; height: 50px; border-radius: 50px;" src="https://document-export.canva.com/kEu94/DAEjBgkEu94/18/thumbnail/0001-3737164603.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20210701%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210701T175024Z&X-Amz-Expires=54659&X-Amz-Signature=fcc6b9ac28b30c053bddbc776eeb9cc067af2ff6ea675df1d760f19869cc4f82&X-Amz-SignedHeaders=host&response-expires=Fri%2C%2002%20Jul%202021%2009%3A01%3A23%20GMT">
+       
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <!-- <a class="mr-5 text-green-700 font-extrabold cursor-pointer hover:text-green-200">First Link</a>
+            <a class="mr-5 text-green-700 font-extrabold cursor-pointer hover:text-green-200">Second Link</a>-->
+            <a href="index.html" class="mr-5 text-green-700 font-extrabold cursor-pointer hover:text-green-200">Home</a> 
+            <a href="Contact.html" class="mr-5 text-green-700 font-extrabold cursor-pointer hover:text-green-200">Contact</a>
+          </nav>
+          <a href="SignIn.html">
+         
+        </a>
+        </div>
+      </header>
+    </div>
+
+
+    <section class="text-gray-400 bg-gray-900 body-font">
+
+        <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+          <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0 m-10">
+            <img src="Content/undraw_File_searching_re_3evy.svg"/>
+        </div>
+          <div class="lg:w-2/6 md:w-1/2 bg-gray-800 bg-opacity-50 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+            <h2 class="text-white text-lg font-medium title-font mb-5">Select paper details</h2>
+            <div class="relative mb-4">
+              <label for="year-" class="leading-7 text-sm text-gray-400">year</label>
+              <input type="text" id="year" name="year" class="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-indigo-900 rounded border border-gray-600 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+              <label for="subject" class="leading-7 text-sm text-gray-400">subject</label>
+              <input type="subject" id="subject" name="subject" class="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-indigo-900 rounded border border-gray-600 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+
+            <div class="relative mb-4">
+                <label for="standard">standard</label>
+        
+                
+                
+                <select class="bg-gray-800 text-green-700 font-extrabold" id="testname">
+                  <option value="1">Periodic Test 1</option>
+                  <option value="2">Mid Yearly Exam</option>
+                  <option value="3">Periodic Test 2</option>
+                  <option value="4">Final Exam</option>
+           
+                </select>
+              
+              </div>
+            <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">go</button>
+      
+          </div>
+        </div>
+      </section>
+      <script src="firebase.js"></script>
+<!-- <script src="login.js"></script> -->
+</body>
+</html>
